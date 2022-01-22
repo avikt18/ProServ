@@ -1,9 +1,9 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
-// import styles from '../styles/Home.module.css'
 import Logo from '../public/Logo.svg'
 import Button from '../components/Button'
+import Navbar from '../components/Navbar'
 
 export default function Home() {
   return (
@@ -15,44 +15,31 @@ export default function Home() {
       </Head>
       <div className="max-w-box w-full min-h-full absolute -z-10 border-[1px] border-black left-1/2 transform -translate-x-1/2" />
       <div className="container flex flex-col items-center min-w-full font-secondary font-medium">
+      
         {/* Navbar starts */}
-        <div className="nav max-w-box w-full py-3 flex justify-between items-center">
-          <Image src={Logo} alt='logo' />
-          <div className="space-x-14">
-            <Link href="/">
-              <a>Explore</a>
-            </Link>
-            <Link href="/">
-              <a>My Purchases</a>
-            </Link>
-            <Link href="/">
-              <a>Become a Seller</a>
-            </Link>
-          <Button href="/login" style="bg-black px-5 py-2 font-medium rounded-md text-white">Login</Button>
-        </div>
-      </div>
-      {/* Navbar ends */}
+        <Navbar />
+        {/* Navbar ends */}
 
-      {/* HomePage main Card starts */}
-      <div className="w-full flex justify-center items-center relative max-w-[1370px] h-[443px] bg-lightGreen my-4 rounded-[20px] shadow-card before:bg-black before:rounded-[20px]">
-        <div className="flex items-center justify-between w-full h-full max-w-box">
-          <div className="w-1/2 mb-8">
-            <h1 className="font-primary font-semibold text-bigHeading mb-4">Struggling to find services for your business?</h1>
-            <p className='text-xl opacity-80'>One stop solution <br />for all services you need</p>
-            <div className="w-3/4 h-[2px] bg-black opacity-70 rounded-sm my-7" />
-            <div className="space-x-6">
-              <Button style="bg-black px-4 py-2 font-medium rounded-md text-white" >Explore</Button>
-              <Button style="px-4 py-2 font-medium rounded-md text-black border-[1px] border-black" >How it works</Button>
+        {/* HomePage main Card starts */}
+        <div className="w-full flex justify-center items-center relative max-w-[1370px] h-[443px] bg-lightGreen my-4 rounded-[20px] shadow-card before:bg-black before:rounded-[20px]">
+          <div className="flex items-center justify-between w-full h-full max-w-box">
+            <div className="w-1/2 mb-8">
+              <h1 className="font-primary font-semibold text-bigHeading mb-4">Struggling to find services for your business?</h1>
+              <p className='text-xl opacity-80'>One stop solution <br />for all services you need</p>
+              <div className="w-3/4 h-[2px] bg-black opacity-70 rounded-sm my-7" />
+              <div className="space-x-6">
+                <Button style="bg-black px-4 py-2 font-medium rounded-md text-white" >Explore</Button>
+                <Button style="px-4 py-2 font-medium rounded-md text-black border-[1px] border-black" >How it works</Button>
+              </div>
+            </div>
+            <div className="mr-10">
+              <Image src='/boy.svg' height="350.13" width="441" alt='boy illustration' />
             </div>
           </div>
-          <div className="mr-10">
-            <Image src='/boy.svg' height="350.13" width="441" alt='boy illustration' />
-          </div>
         </div>
-      </div>
-      {/* HomePage main Card ends */}
+        {/* HomePage main Card ends */}
 
-    </div>
+      </div>
     </div >
   )
 }
