@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        gcwidth: '1440px'
+      },
       maxWidth: {
         'box': '1248px',
       },

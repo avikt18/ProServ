@@ -6,7 +6,7 @@ import Button from './Button'
 
 export default function Navbar() {
     return (
-        <div className="nav max-w-box w-full py-3 flex justify-between items-center">
+        <div className="nav font-secondary max-w-box w-full py-3 flex justify-between items-center">
         <Image src={Logo} alt='logo' />
         <div className="space-x-14">
           <Link href="/">
