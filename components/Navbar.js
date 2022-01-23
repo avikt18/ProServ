@@ -21,5 +21,5 @@ export default function Navbar() {
         <Button href="/login" style="bg-black px-5 py-2 font-medium rounded-md text-white">Login</Button>
       </div>
     </div>
-    )
+  )
 };

@@ -64,7 +64,7 @@ export default function Home() {
           <h1 className="font-medium text-4xl">Explore the services</h1>
           <Slider {...carouselSettings}>
             {categories.map((category, id) => (
-              <div  key={id} className="group h-40 py-6 cursor-pointer border-[1px] border-black rounded-[20px] transition-all">
+              <div key={id} className="group h-40 py-6 cursor-pointer border-[1px] border-black rounded-[20px] transition-all">
                 <div className='group-active:scale-95 flex flex-col items-center transition-transform'>
                   <Image src={category.imageURL} alt='category icon' unoptimized='true' width='80' height='80' objectFit='contain' />
                   <h1 className='font-normal text-xl'>{category.name}</h1>
@@ -77,7 +77,7 @@ export default function Home() {
 
 
       </div>
-    </div >
+    </div>
   )
 }
 
