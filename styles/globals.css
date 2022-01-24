@@ -24,7 +24,6 @@
 @media screen and (min-width:768px) {
     .verticalLine {
         border-right: 3px solid #7A7A7A;
-        height: 300px;
     }
 
     .vertical {

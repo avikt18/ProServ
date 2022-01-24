@@ -20,7 +20,7 @@ export default function Signup() {
                             <input type="text" defaultValue="" className='px-2 mx-5 sm:mx-10 loginForm'></input>
                             <h1 className='mx-5 mt-3 sm:mx-10 sm:mt-5'>Password</h1>
                             <input type="password" defaultValue="" className='px-2 mx-5 mb-3 sm:mb-5 sm:mx-10 loginForm'></input>
-                            <div className="loginButton ml-5 mb-5 sm:ml-10 sm:mb-10">
+                            <div className="loginButton ml-5 mb-5 sm:ml-10">
                                 <Button style=" py-1 pl-2.5 font-medium rounded-md text-black ">Sign Up</Button>
                             </div>
                             <div className='flex flex-col sm:flex-row'>

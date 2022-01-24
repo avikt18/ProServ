@@ -19,6 +19,7 @@ export default function Navbar() {
           <a>Become a Seller</a>
         </Link>
         <Button href="/login" style="bg-black px-5 py-2 font-medium rounded-md text-white">Login</Button>
+        <Button href="/" style="bg-black px-5 py-2 font-medium rounded-md text-white">Sign Out</Button>
       </div>
     </div>
   )
