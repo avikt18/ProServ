@@ -4,22 +4,39 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
-    button {
-        @apply cursor-pointer;
-    }
-
-    html {
-        @apply font-primary;
-    }
+  html {
+    @apply overflow-x-hidden min-h-full;
+  }
+  body {
+    @apply font-primary;
+  }
+  button {
+    @apply cursor-pointer;
+  }
 }
 
-/* @layer components {
-    .shadow-card {
-        @apply before: absolute before:-z-10 before:h-full before:w-full before:top-[6px] before:left-[6px];
-    }
-} */
+@layer components {
+  .shadow-card {
+    @apply relative rounded-[20px] before:absolute before:-z-10 before:h-full before:w-full before:top-[6px] before:left-[6px] before:rounded-[20px];
+  }
+}
+
+/* react slick carousel styles */
+
+.slick-arrow {
+  z-index: 99;
+  width: 42px !important;
+  height: 42px !important;
+}
+
+.slick-slide > div {
+  margin: 0 8px;
+}
+
+.slick-disabled {
+  filter: grayscale(100);
+}
 
 @media screen and (min-width:768px) {
     .verticalLine {
