@@ -41,8 +41,14 @@ const serviceSchema = mongoose.Schema({
     sales:{
         type: Number,
         default: 0
+    },
+    sellerId:{
+        type: mongoose.Types.ObjectId,
+        required : true
     }
 
 })
 
-export default serviceSchema
+var Services = mongoose.model('Services',serviceSchema);
+
+export default Services

@@ -12,8 +12,8 @@ import { motion } from 'framer-motion'
 import carouselSettings from '../utils/carouselSettings'
 export default function Home() {
 
-  const { data: session } = useSession()
-
+  const { session } = useSession()
+    console.log(session)
 
     return (
       <div>

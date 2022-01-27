@@ -33,5 +33,6 @@ export default NextAuth({
                 }
             }
         })
-    ]
+    ],
+    database: process.env.MONGO_URL
 })

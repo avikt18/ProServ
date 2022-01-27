@@ -5,9 +5,34 @@ import LoginBoy from '../public/assets/Icons/LoginBoy.svg'
 import Logo from '../public/assets/Icons/Logo.svg'
 import Link from 'next/link'
 import { signIn, signOut, useSession } from 'next-auth/react'
+import { useState } from 'react'
+import { data } from 'autoprefixer'
 
 export default function Login() {
 
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+
+
+    const loginHandler = async () => {
+        const res = await fetch('api/login.js', {
+            method: "post",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+                email,
+                password,
+            }),
+        })
+        const userData = await res.json()
+        if(data.error){
+            alert(data.error);
+        }
+        else{
+            console.log(data);
+        }
+    }
 
     const { data: session } = useSession()
     return (
@@ -20,11 +45,21 @@ export default function Login() {
                             <div className='loginCard  md:mx-10 xl:mx-20'>
                                 <form className='flex flex-col'>
                                     <h1 className='mx-5 mt-5 sm:mx-10 sm:mt-10'>Email</h1>
-                                    <input type="text" defaultValue="" className='px-2 mx-5 sm:mx-10 loginForm'></input>
+                                    <input
+                                        type="text"
+                                        onChange={(e) => { setEmail(e.target.value) }}
+                                        value={email}
+                                        className='px-2 mx-5 sm:mx-10 loginForm'
+                                    />
                                     <h1 className='mx-5 mt-3 sm:mx-10 sm:mt-5'>Password</h1>
-                                    <input type="password" defaultValue="" className='px-2 mx-5 mb-3 sm:mb-5 sm:mx-10 loginForm'></input>
+                                    <input
+                                        type="password"
+                                        value={password}
+                                        onChange={(e) => { setPassword(e.target.value) }}
+                                        className='px-2 mx-5 mb-3 sm:mb-5 sm:mx-10 loginForm'
+                                    />
                                     <div className="loginButton ml-5 mb-5 sm:ml-10 ">
-                                        <Button style=" py-1 pl-4 font-medium rounded-md text-black " onClick={()=>signIn}>Log In</Button>
+                                        <Button style=" py-1 pl-4 font-medium rounded-md text-black " onClick={() => loginHandler()}>Log In</Button>
                                     </div>
                                     <div className='flex flex-col sm:flex-row'>
                                         <h4 className="ml-5 sm:ml-10 sm:mb-5">{"Don't Have an Account?"}</h4>
