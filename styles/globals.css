@@ -6,7 +6,7 @@
 
 @layer base {
   html {
-    @apply overflow-x-hidden min-h-full;
+    @apply overflow-x-hidden;
   }
   body {
     @apply font-primary;
@@ -18,7 +18,7 @@
 
 @layer components {
   .shadow-card {
-    @apply relative rounded-[20px] before:absolute before:-z-10 before:h-full before:w-full before:top-[6px] before:left-[6px] before:rounded-[20px];
+    @apply relative rounded-[20px] before:absolute before:-z-20 before:h-full before:w-full before:top-[6px] before:left-[6px] before:rounded-[20px];
   }
 }
 
@@ -36,48 +36,4 @@
 
 .slick-disabled {
   filter: grayscale(100);
-}
-
-@media screen and (min-width:768px) {
-    .verticalLine {
-        border-right: 3px solid #7A7A7A;
-    }
-
-    .vertical {
-        position: relative;
-        left: 2rem !important;
-        overflow: visible !important;
-    }
-}
-
-.loginCard {
-    border: 3px solid #000000;
-    border-radius: 20px;
-    box-shadow: 8px 8px 5px 0px #808080;
-    -webkit-box-shadow: 8px 8px 5px 0px #808080;
-    -moz-box-shadow: 8px 8px 5px 0px #808080;
-}
-
-.loginForm{
-    border: 2px solid #000000;
-    border-radius: 8px;
-    font-size: 1.1rem;
-    background-color: #c4c4c4;
-}
-
-.loginButton{
-    width: 86px;
-    background-color: #DEF348;
-    height: 37px;
-    border-radius: 7px;
-    border: 2px solid #000000;
-}
-
-.signupText{
-    text-shadow: 4px 4px 2px rgba(179, 176, 17, 0.65);
-    text-decoration: underline;
-    font-size: 0.8rem;
-    margin-top: -2px;
-    position: relative;
-    top:5px;
-}
+  }
