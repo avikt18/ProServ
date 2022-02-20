@@ -20,14 +20,48 @@
   .shadow-card {
     @apply relative rounded-[20px] before:absolute before:-z-20 before:h-full before:w-full before:top-[6px] before:left-[6px] before:rounded-[20px];
   }
+
+  .absolute-center {
+    @apply transform left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2
+  }
+}
+
+/* custom scrollbar */
+.thin-scrollbar::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+  opacity: 0.5;
+  border-radius: 5px;
+
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #a7a7a7; 
+  border-radius: 5px;
+  opacity: 0.5;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(201, 201, 201); 
 }
 
 /* react slick carousel styles */
 
 .slick-arrow {
-  z-index: 99;
+  z-index: 20;
   width: 42px !important;
   height: 42px !important;
+  filter: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
 }
 
 .slick-slide > div {
@@ -36,4 +70,9 @@
 
 .slick-disabled {
   filter: grayscale(100);
-  }
+}
+
+.slick-dots {
+  bottom: 6px !important;
+}
+

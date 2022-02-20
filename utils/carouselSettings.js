@@ -1,7 +1,7 @@
 import { SlickArrowLeft, SlickArrowRight } from '../components/CarouselArrows'
 
 
-const carouselSettings = {
+const homeCarouselSettings = {
   dots: false,
   infinite: false,
   speed: 500,
@@ -27,4 +27,13 @@ const carouselSettings = {
   ]
 }
 
-export default carouselSettings
+const workCarouselSettings = {
+  dots: true,
+  speed: 500,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  prevArrow: <SlickArrowLeft />,
+  nextArrow: <SlickArrowRight />,
+}
+
+export {homeCarouselSettings, workCarouselSettings}

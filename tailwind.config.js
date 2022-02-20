@@ -11,7 +11,7 @@ module.exports = {
         gcwidth: '1440px'
       },
       maxWidth: {
-        'box': '1248px',
+        'box': '1320px',
       },
       fontFamily: {
         primary: "'Poppins', sans-serif",
@@ -23,8 +23,9 @@ module.exports = {
       colors: {
         lightGreen: '#DEF348', 
         superlightGray: '#EAEAEA',
-        lightGray: '#C4C4C4', 
-      }
+        lightGray: '#C4C4C4',
+        darkGray: '#4E4F50', 
+      },
     },
   },
   plugins: [],

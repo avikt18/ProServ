@@ -7,7 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 function MyApp({ Component, pageProps }) {
   return (
     <SessionProvider session={pageProps.session}>
-      <Component {...pageProps} />
+        <Component {...pageProps} />
     </SessionProvider>
   )
 }
