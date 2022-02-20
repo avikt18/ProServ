@@ -1,3 +1,11 @@
+# [ProServ]()
+
+## 🚧Under Construction🚧
+
+# Description of project
+ProServ is a platform for service providers (freelancers) and service requesters (businesses). Where Skilled persons can sell their services to the businesses and individuals who want to outsource their work to someone else and want to start as early as possible.
+
+# How to start the project
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
