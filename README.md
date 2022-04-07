@@ -9,7 +9,8 @@ ProServ is a platform for service providers (freelancers) and service requesters
 
 ## HomePage
 It has a hero section with cool animations. Scrolling down, sections describing Best Selling Services, Categories of the services available and "Become a Seller" board.
-![HomePage](https://user-images.githubusercontent.com/56340999/162289127-53f9ba23-f3a5-4102-bc1f-d443f39c6cca.png)
+![HomePage](https://user-images.githubusercontent.com/56340999/162290195-706d5e81-6234-4349-8579-9e79cbff982b.png)
+
 
 ## Service Page
 This page lists all the services of a particular category by different sellers. There are minimilistic cards depicting all the information of the service with its price and buying options.
