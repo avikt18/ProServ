@@ -2,8 +2,22 @@
 
 ## 🚧Under Construction🚧
 
+![proserv](https://user-images.githubusercontent.com/56340999/162289072-369ceaf7-23f9-42e4-aeff-9f25a3f98ba4.gif)
+
 # Description of project
 ProServ is a platform for service providers (freelancers) and service requesters (businesses). Where Skilled persons can sell their services to the businesses and individuals who want to outsource their work to someone else and want to start as early as possible.
+
+## HomePage
+It has a hero section with cool animations. Scrolling down, sections describing Best Selling Services, Categories of the services available and "Become a Seller" board.
+![HomePage](https://user-images.githubusercontent.com/56340999/162289127-53f9ba23-f3a5-4102-bc1f-d443f39c6cca.png)
+
+## Service Page
+This page lists all the services of a particular category by different sellers. There are minimilistic cards depicting all the information of the service with its price and buying options.
+![servicePage](https://user-images.githubusercontent.com/56340999/162289711-3a0d140a-9661-4463-9684-2d8faac47c8b.png)
+
+## Seller Profile Page
+This page tell all the things a buyer needs to know about the service and the seller, which are Description, Previos work, Plans and their prices, customer reviews, to name a few.
+![Seller Profile](https://user-images.githubusercontent.com/56340999/162289934-f23841c5-29f2-4f33-9002-a33d11c67ef5.png)
 
 # How to start the project
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
